@@ -1,0 +1,7 @@
+<div mat-dialog-content style="background-color: brown">
+   <p>Enter Details To Update</p>
+</div>
+<div  mat-dialog-content style="background-color:coral">
+   <input type="text" class="input" [(ngModel)]="customerName"/>
+   <button mat-button [mat-dialog-close] cdkFocusInitial (click)="update()">update</button>
+</div>

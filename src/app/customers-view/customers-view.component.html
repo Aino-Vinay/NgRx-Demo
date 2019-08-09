@@ -1,0 +1,13 @@
+<div style="width: 100% ;height:100%">
+<h4>List of Customers</h4>
+<ul class="customers">
+  <li *ngFor="let customer of customers | async; let i=index">
+    <span >{{i+1}}.</span> {{customer.name}}
+    <button (click)="update(i+1)">Update</button>
+    <button (click)="delete(i)">Delete</button>
+  </li>
+</ul>
+</div>
+
+
+
